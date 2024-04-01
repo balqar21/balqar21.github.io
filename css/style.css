@@ -1,0 +1,262 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.html{
+    font-size: 16px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+span{
+    color: orangered;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.4 ease;
+}
+
+.navbar a:hover,
+.navbar a:active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 150vh;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 0px 5% 0; 
+}
+
+.home-content{
+    max-width: 800px;
+}
+
+.home-content h3{
+    font-size: 38px;
+}
+
+.home-content h1{
+    font-size: 38px;
+    line-height: 1.2; 
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 25px 0 30px;
+    text-align: justify;
+    line-height: 1.5;
+    padding-right: 20%;
+}
+
+.img-box img{
+    border-radius: 50%;
+    width: 300px;
+    position: absolute; 
+    justify-content: flex;
+    top: 30%;
+    right: 3px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 3%;
+    gap: 5em;
+    background-color: rgba(26, 26, 26, 0.808);
+}
+
+.about-img img{
+    position: relative;
+    border: 2px solid black;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 350px;
+    height: auto;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 38px;
+}
+
+.about-content h3{
+    font-size: 52px;
+    color: white;
+}
+
+.about-content p{
+    text-align: justify;
+    font-size: 16px;
+    color: white;
+    margin: 20px 10px 40px;
+    line-height: 1.5;
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 3%;
+    gap: 5em;
+    background-color: whitesmoke;
+}
+
+.education-content h2{
+    font-size: 38px;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 10px;
+    margin: 7px;
+}
+
+.education-content h3{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin: 7px;
+    justify-content: left;
+    color: black;
+}
+
+.education-content p{
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 5 0 20px;
+    justify-content: left;
+    margin: 7px;
+}
+
+.education-img img{
+    position: relative;
+    border: 2px solid black;
+    left: 40%;
+    bottom: 10%;
+    transform: translateX(-40%);
+    width: 450px;
+    height: auto;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+    text-align: center;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: 0.4 ease;
+    box-shadow: inset 0 0 10px orangered;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered; 
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.4 ease;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid orangered;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
